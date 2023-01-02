@@ -24,17 +24,13 @@
 </body>
 <script>
     const first = document.getElementById('berry')
-    //  Change the background color of the list element to red.
     first.style.backgroundColor = 'red'
     console.log('I found the berry: ' + first.innerText)
-    //  find the <li> element that contains the word Orange. 
     const second = document.querySelector('li[data-foodtype="squishy"]')
-    //  Change the background color of the list element to orange.
     second.style.backgroundColor = 'orange'
     console.log('I found the fruit: ' + second.innerText)
     const third = document.getElementsByTagName('li')
     console.log(third)
-    //  for loop to print out the name of the fruits from the previous collection.
     for (let i = 0; i < third.length; i++) {
         if (third[i].innerText === 'Pear') {
             third[i].style.backgroundColor = 'green'
@@ -43,7 +39,6 @@
     }
     const fourth = document.querySelectorAll('li')
     console.log(fourth)
-    // Use forEach() to iterate over the list and print out the name of the fruits. Add borders around each <li>element.
     fourth.forEach(function (item) {
         item.style.border = '1px solid black'
         console.log(item.innerText)
